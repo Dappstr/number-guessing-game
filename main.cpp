@@ -28,6 +28,7 @@ auto playGame (int guessedNum, int generatedNum) -> bool
 {
 	while (guessedNum != generatedNum)
 	{
+		std::cout << "Enter guess: ";
 		std::cin >> guessedNum;
 		if(guessedNum < generatedNum)
 		{
@@ -50,7 +51,6 @@ int main()
 	bool gameSwitch (true);
 	while (gameSwitch)
 	{
-		std::cout << "Enter guess: ";
 		playGame(guessedNum, generatedNum);
 		gameSwitch = false;
 	}
