@@ -24,7 +24,7 @@ public:
 int Computer::randNum = makeRand();
 int Computer::num {};
 
-auto playGame (int guessedNum, int generatedNum) -> bool
+auto playGame (int& guessedNum, int& generatedNum) -> bool
 {
 	while (guessedNum != generatedNum)
 	{
